@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/style1.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<h1 class="mb-3" style="font-family: 'Permanent Marker', cursive;;">FORM PENDAFTARAN</h1>
+<form action="#">
+<div class="row">
+    <div class="col-md-10">
+        <div class="mb-3">
+            <div class="row mb-3">
+                <div class="col-md-2">
+                    <label for="kode pendaftar" class="form-label" >Kode Pendaftar</label>
+                        </div>
+                    <div class="col-md-5">
+                <input type="text"  class="form-control" readonly id="kdaf"  placeholder="kode pendaftar">
+            </div>
+        </div>
+    </div>
+    <div class="mb-3">
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="nama" class="form-label">Nama lengkap</label>
+            </div>
+            <div class="col-md-5">
+                <input type="text" id="nama" class="form-control" placeholder="masukkan nama lengkap" >
+            </div>
+        </div>   
+    </div>
+        <div class="mb-3">
+            <div class="row mb-3">
+                <div class="col-md-2">
+                    <label for="place/date">tempat tgl lahir</label>
+                </div>
+                <div class="col-md-5">
+                    <input type="text" id="place" class="form-control">
+                </div>
+                <div class="col-md-3">
+                    <input type="date"  id="date" class="form-control"  onchange="getage()">
+                </div>
+                <div class="col-md-2">
+                    <span id="hasilumur"></span>
+                </div>
+            </div>
+        </div>
+    <div class="mb-3">
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="emailaddress" class="form-label">Email address</label>
+            </div>
+            <div class="col-md-8">
+                <input type="email" class="form-control" id="emailaddress" placeholder="name@example.com">
+            </div>  
+        </div>
+    </div>
+    <div class="mb-3">
+        <div class="row">
+            <div class="col-md-2">
+                <label for="jk">Jenis Kelamin</label>
+            </div>
+            <div class="col-md-3">
+                <input type="radio" id="jk" value="laki">laki-laki<br>
+                <input type="radio" id="jk" value="perempuan">perempuan
+            </div>
+        </div>
+    </div>
+      <div class="mb-3">
+          <div class="row">
+                <div class="col-md-2">
+                    <label for="alamat" class="form-label">Alamat</label>
+                </div>
+                <div class="col-md-8">
+                    <textarea class="form-control" id="alamat" rows="3" onchange=""></textarea>
+                </div>
+                <div class="col-md-2">
+                    <span id="info"></span>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="row">
+                <div class="col-md-1">
+                    <button  type="button" id="kirim"  class="btn btn-outline-success">KIRIM</button>
+                </div>
+                <div class="col-md-1">
+                    <button type="reset" id="hapus" class="btn btn-outline-secondary">RESET</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</form>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/daftar.js"></script>
+</body>
+</html>

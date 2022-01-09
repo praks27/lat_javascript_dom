@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/style.css" />
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- buat tampilan form disini -->
+    <div id="judulbola" >
+      <h3>hitung hasil pertandingan</h3>
+    </div>
+    <h3>Pertandingan Piala AFF 2021</h3>
+    <div class="row">
+      <div class="col-md-2">
+        <label for="nilai1" class="form-label">Nilai-1</label>
+        <input type="text" name="skor1" id="skor1" class="form-control" />
+      </div>
+      <div class="col-md-2">
+        <label for="nilai2" class="form-label">Team B</label>
+        <input type="text" name="skor2" id="skor2" class="form-control" />
+      </div>
+    <div class="col-md-1">
+      <label for="waktu" class="form-label">waktu</label>
+      <select name="waktu" id="waktu" class="form-select">
+      </select>
+    </div>
+  </div>
+  <div class="row pt-2">
+    <div class="col-md-5">
+      <button type="button" id="btn_hasil" class="btn btn-primary form-control" onclick="skor()">lihat skor</button>
+    </div>
+  <div id="kotakskor" class="mx-auto"></div>
+  </div>
+  <hr />
+  <div class="alert alert-success mt-5" role="alert" id="score" style="display: none"></div>
+
+    <!-- letakkan link ke file javascript disini -->
+    <script src="javascript/soccer.js"></script>
+    <script src="javascript/main.js"></script>
+    <script src="javascript/kalkulator.js"></script>
+  </body>
+</html>
