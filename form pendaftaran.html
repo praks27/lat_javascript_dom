@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="asset/style1.css">
+    <!-- <link rel="stylesheet" href="asset/style1.css"> -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 </head>
 <body>
@@ -42,7 +42,7 @@
                     <input type="text" id="place" class="form-control">
                 </div>
                 <div class="col-md-3">
-                    <input type="date"  id="date" class="form-control"  onchange="getage()">
+                    <input type="date"  id="date" class="form-control" >
                 </div>
                 <div class="col-md-2">
                     <span id="hasilumur"></span>
@@ -65,8 +65,8 @@
                 <label for="jk">Jenis Kelamin</label>
             </div>
             <div class="col-md-3">
-                <input type="radio" id="jk" value="laki">laki-laki<br>
-                <input type="radio" id="jk" value="perempuan">perempuan
+                <input type="radio" id="jk" name="jk" value="laki">laki-laki<br>
+                <input type="radio" id="jk" name="jk" value="perempuan">perempuan
             </div>
         </div>
     </div>
@@ -76,7 +76,8 @@
                     <label for="alamat" class="form-label">Alamat</label>
                 </div>
                 <div class="col-md-8">
-                    <textarea class="form-control" id="alamat" rows="3" onchange=""></textarea>
+                    <textarea class="form-control" id="alamat" rows="3" ></textarea>
+                    <span class="alert alert-success" id="displaychar" style="display: none">min 30 karakter</span>
                 </div>
                 <div class="col-md-2">
                     <span id="info"></span>
@@ -86,7 +87,7 @@
         <div class="mb-3">
             <div class="row">
                 <div class="col-md-1">
-                    <button  type="button" id="kirim"  class="btn btn-outline-success">KIRIM</button>
+                    <button  type="button" id="kirim"  class="btn btn-outline-success" disabled>KIRIM</button>
                 </div>
                 <div class="col-md-1">
                     <button type="reset" id="hapus" class="btn btn-outline-secondary">RESET</button>

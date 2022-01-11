@@ -41,7 +41,7 @@ function message(id, text) {
 function welcome(){
   alert("selamat datang guys!!  login dahulu yaa!!");
 };
-document.getElementById("username").onkeyup = function(){
-  let user=document.getElementById("username");
-   user.value=user.value.toUpperCase();
-};
+// document.getElementById("username").onkeyup = function(){
+//   let user=document.getElementById("username");
+//    user.value=user.value.toUpperCase();
+// };
