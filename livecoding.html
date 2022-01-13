@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<form action="#">
+        <div class="row">
+            <div class="mb-3">
+                <div class="row">
+                <div class="col-md-3">
+                    <label for="barang">nama barang</label>
+                </div>
+                <div class="col-md-3">
+                    <select name="barang" id="barang" class="form-control"></select>
+                </div>
+            </div>
+        </div>
+            <div class="mb-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="harga">harga  barang</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" id="hargabarang" class="form-control" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="qty">QTY</label>
+                </div>
+                <div class="col-md-2" >
+                    <input type="number" id="qty" class="form-control">
+                </div>
+                <div class="col-md-1">
+                    <label for="total" class="form-label">total</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" id="total" class="form-control" readonly>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="row">
+              <div class="col-md-3">
+                  <label for="diskon" class="form-label">diskon</label>
+              </div>
+              <div class="col-md-2">
+                  <input type="text" id="diskon" class="form-control" >
+              </div>  
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="ttlbayar" class="form-label">total harga + diskon</label>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" id="ttlbayar" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="jumlahbayar" class="form-label">jumlah yang harus dibayar</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" id="jumlahbayar" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="kembalian" class="form-label">kembalian</label>
+                </div>
+                <div class="col-md-3">
+                    <input type="text" id="kembalian" class="form-control" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+    <script src="javascript/latihan.js"></script>
+    <script src="javascript/main.js"></script>
+</body>
+</html>

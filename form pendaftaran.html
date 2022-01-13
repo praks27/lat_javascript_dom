@@ -87,12 +87,24 @@
         <div class="mb-3">
             <div class="row">
                 <div class="col-md-1">
-                    <button  type="button" id="kirim"  class="btn btn-outline-success" disabled>KIRIM</button>
-                </div>
-                <div class="col-md-1">
-                    <button type="reset" id="hapus" class="btn btn-outline-secondary">RESET</button>
+                    <button  type="button" id="kirim" onclick="daftar(),reset()" class="btn btn-outline-success" disabled>KIRIM</button>
                 </div>
             </div>
+        </div>
+        <div class="mb-3">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Kode Pendaftar</th>
+                    <th scope="col">Nama Lengkap</th>
+                    <th scope="col">Tempat tgl lahir</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Jenis Kelamin</th>
+                    <th scope="col">Alamat</th>
+                  </tr>
+                </thead>
+                <tbody id="tampiltable"></tbody>
+              </table>
         </div>
     </div>
 </div>

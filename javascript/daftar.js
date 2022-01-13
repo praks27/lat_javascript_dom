@@ -1,8 +1,11 @@
 let dinoiki=new Date();
 let tahunS=dinoiki.getFullYear();
 document.getElementById("kirim").disabled=true;
+// function untuk mengosongkan halaman input saat di click
+
 /* function untuk mengambil waktu sekarang/tahun
  dan mengambil 3 huruf pertama untuk dijadikan kode otomatis*/
+ 
 document.getElementById("nama").onkeydown = function(){
     let currentTime=new Date();
     let tahun=currentTime.getFullYear();
@@ -38,6 +41,28 @@ document.getElementById("date").onchange=function(){
          document.getElementById("kirim").disabled=false;  
      }
 }
+function daftar(){
+    let kode=document.getElementById("kdaf").value;
+    let nama=document.getElementById("nama").value;
+    let tempat=document.getElementById("place").value;
+    let tgl=document.getElementById("date").value;
+    let jk=document.getElementById("jk").value;
+    let email=document.getElementById("emailaddress").value;
+    let alamat=document.getElementById("alamat").value;
+
+    let data= "<tr>";
+    data+="<td>"+kode+"</td>";
+    data+="<td>"+nama+"</td>";
+    data+="<td>"+tempat+", "+tgl+"</td>";
+    data+="<td>"+jk+"</td>";
+    data+="<td>"+email+"</td>";
+    data+="<td>"+alamat+"</td>";
+    data+="</tr>";
+    document.getElementById("tampiltable").innerHTML=data;
+}
+// document.getElementById("kirm").onclick=function(){
+//     let kode=
+// }
     // let date=document.getElementById("date").value;
     // if(date=== ""){
     //     alert("mohon diisi terlebih dahulu !!");
@@ -57,9 +82,6 @@ document.getElementById("date").onchange=function(){
     //     document.getElementById("hasilumur").innerHTML = Uskrg +"tahun";
     // }
 // }
-document.getElementById("place").value;
-document.getElementById("date").value;
-document.getElementById("jk").value;
 // function button condition(){
 //     document.getElementById("KIRIM");
 //     let umur = getage();
