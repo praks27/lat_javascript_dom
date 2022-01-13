@@ -52,7 +52,7 @@
                   <label for="diskon" class="form-label">diskon</label>
               </div>
               <div class="col-md-2">
-                  <input type="text" id="diskon" class="form-control" >
+                  <input type="text" id="diskon" class="form-control" readonly>
               </div>  
             </div>
         </div>
@@ -62,14 +62,14 @@
                     <label for="ttlbayar" class="form-label">total harga + diskon</label>
                 </div>
                 <div class="col-md-2">
-                    <input type="text" id="ttlbayar" class="form-control">
+                    <input type="text" id="ttlbayar" class="form-control" readonly>
                 </div>
             </div>
         </div>
         <div class="mb-3">
             <div class="row">
                 <div class="col-md-3">
-                    <label for="jumlahbayar" class="form-label">jumlah yang harus dibayar</label>
+                    <label for="jumlahbayar" class="form-label">jumlah bayar</label>
                 </div>
                 <div class="col-md-3">
                     <input type="text" id="jumlahbayar" class="form-control">
@@ -85,6 +85,29 @@
                     <input type="text" id="kembalian" class="form-control" readonly>
                 </div>
             </div>
+        </div>
+        <div class="mb-3">
+            <div class="row">
+                <div class="col-md-4">
+                    <button class="btn btn-outline-primary" id="cekout" onclick="pembayaran(),reset()">checkout</button>
+                </div>
+            </div>
+        </div>
+        <div class="mb-3">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Nama Barang</th>
+                    <th scope="col">Harga Barang</th>
+                    <th scope="col">QTY</th>
+                    <th scope="col">Diskon</th>
+                    <th scope="col">Total Harga + Diskon</th>
+                    <th scope="col">Jumlah Bayar</th>
+                    <th scope="col">kembalian</th>
+                  </tr>
+                </thead>
+                <tbody id="strukharga"></tbody>
+              </table>
         </div>
     </div>
 </form>

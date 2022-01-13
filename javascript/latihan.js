@@ -14,17 +14,50 @@ let harga=document.getElementById("hargabarang");
 barang.onchange=function(){
     harga.value = barang.value;
 };
+let ttldis=document.getElementById("ttlbayar");
 let diskon = document.getElementById("diskon");
 let total=document.getElementById("total");
+let  qty=document.getElementById("qty");
 qty.onchange=function(){
     total.value=qty.value*harga.value;
     if(total.value>=100000){
         diskon.value=total.value*0.05;
+        ttldis.value=total.value-diskon.value;
     }else{
         diskon.value=0;
     }
-    
 }
+let kembalian=document.getElementById("kembalian");
+let bayar=document.getElementById("jumlahbayar");
+bayar.onkeyup=function(){
+    kembalian.value=bayar.value-ttldis.value;
+}
+
+function pembayaran(){
+    let namabarang=document.getElementById("barang").value;
+    let hargabarang=document.getElementById("hargabarang").value;
+    let QTY=document.getElementById("qty").value;
+    let diskon=document.getElementById("diskon").value;
+    let ttldis=document.getElementById("ttldis").value;
+    let jumlahbayar=document.getElementById("jumlahbayar").value;
+    let kembalian=document.getElementById("kembalian").value;
+
+    let databayar="<tr>";
+    databayar+="<td>"+namabarang+"</td>";
+    databayar+="<td>"+hargabarang+"</td>";
+    databayar+="<td>"+QTY+"</td>";
+    databayar+="<td>"+diskon+"</td>";
+    databayar+="<td>"+ttldis+"</td>";
+    databayar+="<td>"+jumlahbayar+"</td>";
+    databayar+="<td>"+kembalian+"</td>";
+    databayar+="</tr>";
+
+    document.getElementById("strukharga").innerHTML=databayar;
+
+
+}
+
+
 
 
 
